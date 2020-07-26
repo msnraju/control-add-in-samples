@@ -224,4 +224,4 @@ If we think about it, actually we don't need training to work on portals just be
 
 Use Control Add-ins - Help customers!!
 
-You can download source code of this example from [Github]()
+You can download source code from [Github]()
