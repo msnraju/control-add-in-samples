@@ -1,6 +1,4 @@
-# Why to use create Control Add-ins - Overview with a simple Example
-
-## About Control Add-ins
+# Why to use Control Add-ins (Overview with a simple Example)
 
 Control Add-in is a special type of object in Business Central to create user controls. In other words Control Add-in is a web component developed using JavaScript, HTML, CSS that can interact with Business Central. You need Control Add-in (Custom User Control) when you do not have such control available in standard Business Central page controls. Also you need Control Add-in when you want to simplify User Interface for your Business Central User.
 
