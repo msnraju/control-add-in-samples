@@ -216,7 +216,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 ```
 
 ## Carousel Control in Action
-![Drag Racing](media\carousel.gif)
+![Customers Screen](media/carousel.gif)
 
 ## Conclusion
 
