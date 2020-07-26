@@ -1,10 +1,12 @@
 # Why to use Control Add-ins (Overview with a simple Example)
 
-Control Add-in is a special type of object in Business Central to create user controls. In other words Control Add-in is a web component developed using JavaScript, HTML, CSS that can interact with Business Central. You need Control Add-in (Custom User Control) when you do not have such control available in standard Business Central page controls. Also you need Control Add-in when you want to simplify User Interface for your Business Central User.
+## Introduction
+
+`Control Add-in` is a special type of object in Business Central to create `User Control`. In other words `Control Add-in` (User Control) is a web component developed using `JavaScript`, `HTML` and `CSS` that can interact with Business Central. You need `User Control` when you do not have the required control available in standard Business Central. Also you need `User Control` when you want to simplify User Interface (UI) for your Business Central User.
 
 ## Skills Required
 
-You need to know have the following skills to develop Control Add-ins:
+You need to have the following skills to develop `Control Add-ins`:
 
 	• AL - Good
 	• HTML - Basic
@@ -13,22 +15,24 @@ You need to know have the following skills to develop Control Add-ins:
 
 If you are smart enough, you just need to know how to copy paste :)
 
-If you are new to [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/css/), and [JavaScript](https://www.w3schools.com/js/) in my opinion [w3shools.com](https://www.w3schools.com/html/) is the best place to learn quickly.
+If you are new to [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/css/), and [JavaScript](https://www.w3schools.com/js/), in my opinion [w3shools.com](https://www.w3schools.com/html/) is the best place to learn quickly.
 
 ## Dos and don'ts
 
-You should try to create reusable Control Add-ins, you should void hard-coding, you should be able to use in more than one page.
-For example 
-	• A 'map control' can be used, in Customer, Vendor, Bank, Location pages. 
-	• A 'status indicator control' can be used in Sales, Purchase, and Service Orders, may be in Back Reconciliation page also. 
+You should try to create reusable `Control Add-ins`, you should avoid hard-coding. You should be able to use the same `User Control` in more than one page.
 
-If you hard-code slides data in Control Add-in instead of sending as parameter in the below example, you can not use this Control Add-in in other pages.
+For example:
+
+* A 'Map Control' can be used, in Customer, Vendor, Bank, Location pages. 
+* A 'Status Indicator Control' can be used in Sales, Purchase, and Service Orders, may also be in Bank Reconciliation page. 
+
+In the example given below, if you hard-code slides data in `Control Add-in` instead of sending as a parameter, you can not use this in other pages.
 
 ## No more talking - Let's create a Control Add-in
 
-We don’t need to develop Control Add-in from the scratch. There are tons of open source web components available on the web. We just need to understand the component and convert it to Control Add-in.
+We don’t need to develop `Control Add-in` from scratch. There are tons of open source web components available on the web. We just need to understand the component and convert it to `Control Add-in`.
 
-We are creating [Carousel](https://getbootstrap.com/docs/4.5/components/carousel/#with-captions) control using [Bootstrap](https://getbootstrap.com/) component.
+We are creating [Carousel](https://getbootstrap.com/docs/4.5/components/carousel/#with-captions) control using the [Bootstrap](https://getbootstrap.com/) component.
 
 We need to use the following resources for any bootstrap component:
 
@@ -87,8 +91,9 @@ We need to use the following resources for any bootstrap component:
 ```
 
 ### Control Add-in Object (CarouselControl.controladdin.al)
-This 'Carousel Control' Control Add-in has OnStartup trigger, this will be triggered once the control is loaded. 
-SetCarouselData is a function that will send carousel control data to Control Add-in. 
+This `Carousel Control` has `OnStartup` trigger, which will be triggered once the `User Control` is loaded. 
+
+`SetCarouselData` is a function that will send the slides data to `Control Add-in`. 
 
 ```
 controladdin "Carousel Control"
@@ -112,7 +117,7 @@ controladdin "Carousel Control"
 ```
 
 ### Startup Javascript file (startup.js)
-This javascript will be loaded once the User Control is ready. We are invoking 'OnStartup' trigger so that hosting page can receive and trigger event and send the data to the User Control.
+This `JavaScript` file will be loaded once the `User Control` is ready. We are invoking `OnStartup` trigger so that the hosting page can receive the event and send the data back to the `User Control`.
 
 ```javascript
 Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('OnStartup')
@@ -175,7 +180,7 @@ window.SetCarouselData = function (data) {
 ```
 
 ### Page (CustomerListExt.PageExt.al)
-We are extending Customers page to add 'Carousel Control' at the top of the customers list. 'OnStartup' event we are preparing Json object that contains slides data and sending it to Carousel control.
+We are extending the `Customers` page to add `Carousel Control` at the top of the customers list. When the `OnStartup` event is triggered, we are preparing the `Json Object` that contains the slides data and sending it to `Carousel Control`.
 
 ```
 pageextension 50100 CustomerListExt extends "Customer List"
@@ -218,8 +223,10 @@ pageextension 50100 CustomerListExt extends "Customer List"
 
 ## Conclusion
 
-If we think about it, actually we don't need training to work on portals just because they are intuitive. But in the case of Business Applications we definitely need to provide training to the Business Users, where as they already know their business more than us. Is int it funny! It is simply because we are not providing proper intuitive User Interfaces. I think we should try to provide proper UI to our customers so that it is convenient for their Users. Proper UI means we should not restrict ourself to only to the available controls, where ever required we should definitely try to create Control Add-ins / User Controls for better user experience.
+If we think about it, The Users don't actually need training to work on portals just because they are intuitive. But in the case of Business Applications, we definitely need to provide training to the Business Users, where they already know their business more than us. Isn't it funny! It is simply because they are not provided proper and intuitive User Interfaces. I think we should try to provide proper UI to the Users so that it is convenient for their use. Proper UI means that we should not restrict ourself only to the available controls. Where ever required, we should definitely try to create `Control Add-ins` / `User Controls` for better user experience.
 
-Use Control Add-ins - Help customers!!
+Use `Control Add-ins` - Help customers!!
 
-You can download source code from [Github]()
+You can download the source code from [Github]()
+
+Thank You
