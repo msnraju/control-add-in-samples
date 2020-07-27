@@ -1,4 +1,4 @@
-# Microsoft Dynamics 365 Business Central - `Control Add-in` Samples
+# Microsoft Dynamics 365 Business Central - Control Add-in Samples
 
 ## Overview
 This repository is for Business Control `Control Add-in` samples. 
