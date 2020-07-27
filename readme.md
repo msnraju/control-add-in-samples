@@ -17,7 +17,7 @@ Run this command to clone this repository into your machine:
 git clone https://github.com/msnraju/control-add-in-samples.git
 ```
 
-If you do not have [node.js](https://nodejs.org/en/download/) installed, you can directly download from [here](https://github.com/msnraju/control-add-in-samples.git).
+If you do not have [node.js](https://nodejs.org/en/download/) installed, you can directly download from [here](https://github.com/msnraju/control-add-in-samples/archive/master.zip).
 
 ## References
 [Control Add-In Object](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-control-addin-object)
