@@ -22,5 +22,5 @@ If you do not have [node.js](https://nodejs.org/en/download/) installed, you can
 ## References
 [Control Add-In Object](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-control-addin-object)
 
-[Why to use Control Add-ins in Microsoft Dynamics 365 Business Central](https://msn-learnings.blogspot.com/2020/07/why-to-use-control-add-ins-in-microsoft-dynamics-365-business-central.html)
+[How to Create Control Add-in in Microsoft Dynamics 365 Business Central](https://www.msnjournals.com/post/how-to-create-control-add-in-in-microsoft-dynamics-365-business-central)
 
