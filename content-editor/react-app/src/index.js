@@ -2,18 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ContentEditor from './App';
 
-if (document.getElementById('root')) {
+const rootEl = document.getElementById('root');
+if (rootEl) {
   ReactDOM.render(
     <React.StrictMode>
       <ContentEditor />
     </React.StrictMode>,
-    document.getElementById('root')
+    rootEl
   );
 }
 
 window.addEventListener('onControlAddInStartup', (e) => {
-  console.log('onControlAddInStartup - cached');
-
   ReactDOM.render(
     <React.StrictMode>
       <ContentEditor />
@@ -21,6 +20,3 @@ window.addEventListener('onControlAddInStartup', (e) => {
     document.getElementById('controlAddIn')
   );
 })
-
-
-alert('react component');

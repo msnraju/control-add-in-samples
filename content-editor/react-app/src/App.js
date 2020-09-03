@@ -19,27 +19,40 @@ class ContentEditor extends React.Component {
     super(props);
 
     this.refsEditor = React.createRef();
+
+    this.onLoadContentFunc = this.onLoadContent.bind(this);
+    window.addEventListener('onLoadContent', this.onLoadContentFunc)
   }
 
-  state = {
-    editorState: EditorState.createEmpty(),
-  };
+  state = { editorState: EditorState.createEmpty(), }
+
+  onLoadContent(e) {
+    this.setState({
+      editorState: e.detail,
+    });
+  }
 
   onChange = editorState => {
     this.setState({
       editorState,
     });
 
-    console.log(editorState);
+    this.contentChangeEvent = new CustomEvent('onContentChange', { detail: editorState.currentContent });
+    window.dispatchEvent(event);
+    console.log(editorState.currentContent);
   };
 
   componentDidMount() {
     this.refsEditor.current.focus();
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('onLoadContent', this.onLoadContentFunc);
+  }
+
   render() {
     return (
-      <div className='margins'>
+      <div className='content-editor-container'>
         <RichContentEditor
           ref={this.refsEditor}
           plugins={PLUGINS}

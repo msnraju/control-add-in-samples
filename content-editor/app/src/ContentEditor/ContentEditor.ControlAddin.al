@@ -1,7 +1,6 @@
 controladdin ContentEditor
 {
     RequestedHeight = 300;
-    RequestedWidth = 700;
     VerticalStretch = true;
     VerticalShrink = true;
     HorizontalStretch = true;
