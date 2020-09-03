@@ -1,0 +1,45 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "wix-rich-content-editor": "^7.17.1",
+    "wix-rich-content-plugin-code-block": "^7.18.1",
+    "wix-rich-content-plugin-hashtag": "^7.18.1",
+    "wix-rich-content-plugin-html": "^7.18.1",
+    "wix-rich-content-plugin-link": "^7.18.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
