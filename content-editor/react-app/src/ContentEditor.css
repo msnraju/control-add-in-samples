@@ -1,0 +1,15 @@
+body {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.content-editor-container {
+  padding: 3.5rem 0 0 3rem;
+  max-height: calc(300px - 3.5rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+div.Tux6h {
+  font-size: 14px;
+}
