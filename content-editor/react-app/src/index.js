@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContentEditor from './App';
+import ContentEditor from './ContentEditor';
 
 const rootEl = document.getElementById('root');
 if (rootEl) {

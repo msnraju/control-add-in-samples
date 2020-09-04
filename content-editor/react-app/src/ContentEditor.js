@@ -11,7 +11,7 @@ import 'wix-rich-content-plugin-link/dist/styles.min.css';
 import 'wix-rich-content-plugin-code-block/dist/styles.min.css';
 import 'wix-rich-content-plugin-hashtag/dist/styles.min.css';
 import 'wix-rich-content-plugin-html/dist/styles.min.css';
-import './App.css';
+import './ContentEditor.css';
 
 import {
   convertFromRaw,
@@ -45,8 +45,8 @@ class ContentEditor extends React.Component {
       this.state = { editorState: EditorState.createEmpty(), };
     }
 
-    this.onLoadContentFunc = this.onLoadContent.bind(this);
-    window.addEventListener(ON_LOAD_CONTENT_EVENT, this.onLoadContentFunc)
+    this.onLoadContent = this.onLoadContent.bind(this);
+    window.addEventListener(ON_LOAD_CONTENT_EVENT, this.onLoadContent)
   }
 
   onLoadContent(e) {
@@ -74,7 +74,7 @@ class ContentEditor extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener(ON_LOAD_CONTENT_EVENT, this.onLoadContentFunc);
+    window.removeEventListener(ON_LOAD_CONTENT_EVENT, this.onLoadContent);
   }
 
   render() {

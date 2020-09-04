@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "classnames": "^2.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "classnames": "^2.2.6",
     "wix-rich-content-editor": "^7.17.1",
     "wix-rich-content-plugin-code-block": "^7.18.1",
     "wix-rich-content-plugin-hashtag": "^7.18.1",
