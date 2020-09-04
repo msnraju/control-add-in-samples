@@ -12,11 +12,3 @@ if (rootEl) {
   );
 }
 
-window.addEventListener('onControlAddInStartup', (e) => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <ContentEditor />
-    </React.StrictMode>,
-    document.getElementById('controlAddIn')
-  );
-})

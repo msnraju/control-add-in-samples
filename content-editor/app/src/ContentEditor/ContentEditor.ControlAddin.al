@@ -5,12 +5,11 @@ controladdin ContentEditor
     VerticalShrink = true;
     HorizontalStretch = true;
     HorizontalShrink = true;
-    Scripts = './src/ContentEditor/js/content-editor.js';
+    Scripts =
+        './src/ContentEditor/js/content-editor-events.js',
+        './src/ContentEditor/js/content-editor.js';
     StyleSheets = './src/ContentEditor/css/content-editor.css';
 
-    StartupScript = './src/ContentEditor/js/startupScript.js';
-
-    event OnContentChange(content: Text)
-
-    procedure LoadContent(content: Text)
+    event OnContentChange(content: JsonObject)
+    procedure LoadContent(content: JsonObject)
 }

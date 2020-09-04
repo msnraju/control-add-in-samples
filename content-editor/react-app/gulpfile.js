@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var minify = require('gulp-minify');
 var cleanCss = require('gulp-clean-css');
 
 const ControlAddInFolder = '../app/src/ContentEditor';
@@ -9,7 +8,7 @@ const ControlAddInName = 'content-editor';
 gulp.task('pack-js', function () {
     return gulp.src(['build/static/js/*.js'])
         .pipe(concat(`${ControlAddInName}.js`))
-        .pipe(minify())
+        // .pipe(minify())
         .pipe(gulp.dest(`${ControlAddInFolder}/js`));
 });
 
