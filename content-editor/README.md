@@ -7,3 +7,6 @@ It has the following projects
 
 ## Learn more
 You can find details at [msnJournals.com](https://msnJournals.com).
+
+## Code in Action
+![content-editor](./media/content-editor.gif)
