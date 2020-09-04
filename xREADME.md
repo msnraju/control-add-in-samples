@@ -5,6 +5,7 @@ This repository is for Business Control `Control Add-in` samples.
 
 Sample `Control Add-ins`:
 * [Carousel](https://github.com/msnraju/control-add-in-samples/tree/master/carousel)
+* [Content-Editor](https://github.com/msnraju/control-add-in-samples/tree/master/content-editor)
 
 :) I will try to add more `User Controls` when I get time.
 
