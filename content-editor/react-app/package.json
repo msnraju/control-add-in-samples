@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "react-scripts": "5.0.1",
     "classnames": "^2.2.6",
     "wix-rich-content-editor": "^7.17.1",
     "wix-rich-content-plugin-code-block": "^7.18.1",
